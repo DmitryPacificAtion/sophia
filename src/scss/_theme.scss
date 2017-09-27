@@ -1,0 +1,24 @@
+.selectric-open .selectric, .selectric {
+	border-color: black;
+	background-color: black;
+}
+.selectric .label, .selectric-items li {
+	color: #fff;
+	font-weight: 700;
+}
+.selectric-items {
+	top: 270%;
+	border-color: $black;
+	background-color: $black;
+}
+.selectric .button {
+	width: 18px;
+	background-color: #000;
+	&:after {
+		border-top-color: #fff;
+	}
+}
+.selectric-items li.highlighted {
+	background: black;
+	color: #fff;
+}

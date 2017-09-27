@@ -14,4 +14,13 @@
 			}
 		}
 	}
+	.slider__content {
+		.slider__content_item.active {
+			display: inline-block;
+		}
+	}
+}
+.selectric-items li:hover {
+	background: black;
+	color: #fff;
 }

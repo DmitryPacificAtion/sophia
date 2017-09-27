@@ -79,13 +79,10 @@
 	.slider__content {
 		list-style-type: none;
 		transition: transform 1s ease-in-out;
-		display: flex;
-		flex-wrap: no-wrap;
-		justify-content: space-between;
-		white-space: nowrap;
 		.slider__content_item {
-			display: inline-block;
+			display: none;
 			width: 100%;
+			transition-duration: .5s; 
 		}
 	}
 	.slider__dots_wrap {
@@ -209,5 +206,18 @@
 			left: -50%;
 			text-transform: uppercase;
 		}
+	}
+}
+.labels {
+	text-align: center;
+	div {
+		background-color: #000;
+		color: #fff;
+		display: inline-block;
+		font-family: 'Lato';
+		font-weight: 700;
+	}
+	div:first-child, div:last-child {
+		background-color: $tan;
 	}
 }

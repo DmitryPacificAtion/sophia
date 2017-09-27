@@ -29,7 +29,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-watch": "^4.3.11",
-    "open-iconic": "^1.1.1"
+    "open-iconic": "^1.1.1",
+    "selectric": "^1.13.0"
   },
   "keywords": [],
   "author": "",

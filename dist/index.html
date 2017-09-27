@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<title>Hello World</title>
 	<meta name="description" content="">
-	<script async src="js/bundle.min.js"></script>
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -34,25 +33,25 @@
 				<li class="nav-item"><a href="" class="nav-link pint">pn</a></li>
 				<li class="nav-item"><a href="" class="nav-link insta">ins</a></li>
 			</ul>
-			<select name="multilang">
-				<option>English</option>
-				<option>Spanish</option>
-				<option>French</option>
-				<option>Italian</option>
+			<select id="multilang" name="multilang">
+				<option value="English">English</option>
+				<option value="Spanish">Spanish</option>
+				<option value="French">French</option>
+				<option value="Italian">Italian</option>
 			</select>
 			<div class="triangle"></div>
 		</div>
 	</header>
 	<section class="l-slider">
 		<ul class="slider__content">
-			<li class="slider__content_item" data-slider-content="1"><img src="img/slide-1.jpg" alt="First slide"></li>
-			<li class="slider__content_item active" data-slider-content="2"><img src="img/slide-2.jpg" alt="Second slide"></li>
+			<li class="slider__content_item active" data-slider-content="1"><img src="img/slide-1.jpg" alt="First slide"></li>
+			<li class="slider__content_item" data-slider-content="2"><img src="img/slide-2.jpg" alt="Second slide"></li>
 			<li class="slider__content_item" data-slider-content="3"><img src="img/slide-3.jpg" alt="Third slide"></li>
 		</ul>
 		<div class="slider__dots_wrap">
 			<ul class="slider__dots">
-				<li class="slider__dots_item " data-slider-dot="1"><button></button></li>
-				<li class="slider__dots_item active" data-slider-dot="2"><button></button></li>
+				<li class="slider__dots_item active" data-slider-dot="1"><button></button></li>
+				<li class="slider__dots_item" data-slider-dot="2"><button></button></li>
 				<li class="slider__dots_item" data-slider-dot="3"><button></button></li>
 			</ul>
 		</div>
@@ -74,5 +73,12 @@
 			<button class="sale__btn">Shop now</button>
 		</div>
 	</section>
+	<section class="labels">
+		<div class="shipping">FREE SHIPPING<br><span>In Order Min $200</span></div>
+		<div class="return">30-DAYS RETURNS<br><span>Money Back  Guarantee</span></div>
+		<div class="support">24/7 SUPPORT<br><span>Lifestyme Support</span></div>
+	</section>
+	<script src="js/bundle.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
