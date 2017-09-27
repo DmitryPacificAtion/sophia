@@ -3,20 +3,21 @@
 	padding: 0;
 }
 body {
+	color: $dark-typo;
+	font-family: 'Lato';
 	font-size: $baseFontSize;
-	max-width: 1920px;
-	background-color: #fff;
+	font-weight: normal;
 	margin: 0 auto;
 }
 svg {
-	width: 22px;
 	height: 22px;
+	width: 22px;
 }
 button {
 	&:active {
-		outline: none;
 		border-color: transparent;
 		color: $orange;
+		outline: none;
 		transition-duration: .2s;
 	}
 	&:focus {

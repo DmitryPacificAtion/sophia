@@ -4,18 +4,75 @@
 	<meta charset="UTF-8">
 	<title>Hello World</title>
 	<meta name="description" content="">
+	<script async src="js/bundle.min.js"></script>
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 	<header class="l-header">
-		<div class="call"></div>
-		<ul class="nav">
-			<li class="nav-item"><a href="#link" class="nav-link">WELCOME MSG!</a></li>
-			<li class="nav-item"><a href="#link" class="nav-link">MY ACCOUNT</a></li>
-			<li class="nav-item"><a href="#link" class="nav-link">MY WHISTLIST</a></li>
-			<li class="nav-item"><a href="#link" class="nav-link">LOGIN</a></li>
-		</ul>
+		<div class="sup-header">
+			<div class="container d-flex justify-content-between">
+				<div class="call">Call +001 555 801</div>
+				<ul class="nav">
+					<li class="nav-item"><a href="#link" class="nav-link">WELCOME MSG!</a></li>
+					<li class="nav-item"><a href="#link" class="nav-link">MY ACCOUNT</a></li>
+					<li class="nav-item"><a href="#link" class="nav-link">MY WHISTLIST</a></li>
+					<li class="nav-item"><a href="#link" class="nav-link">LOGIN</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="sub-header container d-flex justify-content-between">
+			<ul class="nav">
+				<li class="nav-item"><a href="#link" class="nav-link">Home</a></li>
+				<li class="nav-item"><a href="#link" class="nav-link">Gallery</a></li>
+				<li class="nav-item"><a href="#link" class="nav-link">Categories</a></li>
+				<li class="nav-item"><a href="#link" class="nav-link">Pages</a></li>
+			</ul>
+			<div class="logo">Sophia</div>
+			<ul class="social nav">
+				<li class="nav-item"><a href="" class="nav-link fb">fb</a></li>
+				<li class="nav-item"><a href="" class="nav-link tw">tw</a></li>
+				<li class="nav-item"><a href="" class="nav-link pint">pn</a></li>
+				<li class="nav-item"><a href="" class="nav-link insta">ins</a></li>
+			</ul>
+			<select name="multilang">
+				<option>English</option>
+				<option>Spanish</option>
+				<option>French</option>
+				<option>Italian</option>
+			</select>
+			<div class="triangle"></div>
+		</div>
 	</header>
-	<script src="js/bundle.min.js"></script>
+	<section class="l-slider">
+		<ul class="slider__content">
+			<li class="slider__content_item" data-slider-content="1"><img src="img/slide-1.jpg" alt="First slide"></li>
+			<li class="slider__content_item active" data-slider-content="2"><img src="img/slide-2.jpg" alt="Second slide"></li>
+			<li class="slider__content_item" data-slider-content="3"><img src="img/slide-3.jpg" alt="Third slide"></li>
+		</ul>
+		<div class="slider__dots_wrap">
+			<ul class="slider__dots">
+				<li class="slider__dots_item " data-slider-dot="1"><button></button></li>
+				<li class="slider__dots_item active" data-slider-dot="2"><button></button></li>
+				<li class="slider__dots_item" data-slider-dot="3"><button></button></li>
+			</ul>
+		</div>
+		<div class="slider__control">
+			<button class="slider__control_left"><</button>
+			<button class="slider__control_right">></button>
+		</div>
+		<div class="sale">
+			<div class="sale__wrapper">
+				<div class="sale__block">
+					<div>Mid-season</div>
+					<div>sale</div>
+					<div class="left-lines"></div>
+					<div>up to</div>
+					<div class="right-lines"></div>
+					<div>50% off</div>
+				</div>
+			</div>
+			<button class="sale__btn">Shop now</button>
+		</div>
+	</section>
 </body>
 </html>
