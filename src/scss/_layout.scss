@@ -1,12 +1,26 @@
 .l-header {
-	text-transform: uppercase;
 	font-size: rem(11);
+	text-transform: uppercase;
 }
 .l-slider {
+	margin: 0 auto;
 	max-height: 690px;
 	max-width: 1440px;
-	margin: 0 auto;
 	overflow: hidden;
 	position: relative;
 	z-index: 100;
+}
+.l-footer {
+	background-color: $black;
+	color: #fff;
+}
+.overflow {
+	background-color: rgba(0, 0, 0, .5);
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 6310px;
+	width: 100%;
+	z-index: 9990;
 }

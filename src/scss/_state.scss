@@ -24,3 +24,131 @@
 	background: black;
 	color: #fff;
 }
+.products-item__preview:hover {
+	.products-item__overlay {
+		background-color: rgba(0, 0, 0, 0.5);
+		display: block;
+	}
+	.add-to-card__label {
+		border-bottom-color: $redSand;
+	}
+}
+.l-footer {
+	.content-item__link:hover {
+		border-bottom: 1px solid #fff;
+		color: #fff;
+	}
+}
+.overflow.active {
+	display: block;
+	.modal {
+		display: block;
+	}
+}
+@media screen and (min-width: 480px) {
+	.sup-header {
+		height: 40px;
+		.nav-link {
+			&:after {
+				border-right: 1px solid #000;
+				content: '';
+				display: inline-block;
+				margin-left: 30px;
+				height: 12px;
+			}
+		}
+		.nav-item:last-child {
+			.nav-link:after {
+				border: none;
+				content: '';
+				display: inline-block;
+				margin-left: 30px;
+			}
+		}
+	}
+	.sub-header {
+		height: 130px;
+		.triangle {
+			top: 130px;
+			left: 50%;
+			&:after {
+				left: -50%;
+			}
+		}
+	}
+	.selectric-wrapper {
+		width: 115px;
+	}
+	.slider__control {
+		display: block;
+	}
+	.sale {
+		left: 50%;
+		.sale__wrapper {
+			left: -50%;
+		}
+		.sale__block {
+			.left-lines, .right-lines {
+				width: 60px;
+				&:before {
+					width: 30px;
+				}
+			}
+		}
+		.sale__btn {
+			left: -50%;
+		}
+	}
+	.labels {
+		div:first-child {
+			margin-right: 25px;
+		}
+		div:last-child {
+			margin-left: 25px;
+		}
+		div:first-child:after {
+			background-color: $tan;
+			content: '';
+			display: inline-block;
+			position: absolute;
+			top: 15px;
+			right: -35px;
+			transform: rotateZ(45deg);
+			height: 70px;
+			width: 70px;
+		}
+		div:last-child:before {
+			background-color: $tan;
+			content: '';
+			display: inline-block;
+			position: absolute;
+			top: 15px;
+			left: -35px;
+			transform: rotateZ(45deg);
+			height: 70px;
+			width: 70px;
+		}
+		div:nth-child(2) {
+			&:after, &:before {
+				background-color: #fff;
+				content: '<';
+				display: inline-block;
+				position: absolute;
+				top: 15px;
+				left: -35px;
+				transform: rotateZ(45deg);
+				height: 70px;
+				width: 70px;
+			}
+		}
+	}
+	.l-products {
+		padding: 30px 70px;
+		h2 {
+			width: 500px;
+		}
+	}
+}
+@media screen and (min-width: 1024px) {
+	
+}

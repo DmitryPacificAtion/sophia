@@ -12,9 +12,9 @@ var babel = require("gulp-babel");
 
 gulp.task('sass', function () {
 	return gulp.src([
-		'./node_modules/open-iconic/font/css/open-iconic-bootstrap.scss', 
 		'./node_modules/bootstrap/scss/bootstrap.scss',
 		'./node_modules/selectric/src/selectric.scss',
+		'./node_modules/font-awesome/scss/font-awesome.scss',
 		'./src/scss/*.scss'
 		])
 	.pipe(sass().on('error', sass.logError))
@@ -54,7 +54,7 @@ gulp.task('js', function () {
 
 gulp.task('fonts', function(){
 	return gulp.src([
-		'./node_modules/open-iconic/font/fonts', 
+		'./node_modules/font-awesome/fonts/fonts', 
 		'./src/fonts'
 		])
 	.pipe(gulp.dest('./dist/fonts'));
