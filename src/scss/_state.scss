@@ -1,7 +1,7 @@
 .sup-header {
 	.nav-link:hover {
 		color: #000;
-		text-shadow: 2px 2px #333;
+		text-shadow: 2px 1px #333;
 		transition-duration: .3s;
 	}
 }
@@ -130,11 +130,15 @@
 			display: block;
 		}
 	}
+	.overlay {
+		height: 5810px;
+	}
 }
 @media screen and (min-width: 640px) {
 	.sup-header {
 		height: 40px;
 		.call {
+			float: left;
 			width: 33%;
 		}
 		.nav {
@@ -194,6 +198,9 @@
 			display: inline-block;
 			width: 49%;
 		}
+	}
+	.overlay {
+		height: 3815px;
 	}
 }
 @media screen and (min-width: 768px) {
@@ -308,12 +315,75 @@
 			width: 30%;
 		}
 	}
+	.overlay {
+		height: 3650px;
+	}
 }
 @media screen and (min-width: 960px) {
+	.sup-header {
+		.call {
+			width: auto;
+		}
+		.nav {
+			float: right;
+			width: auto;
+			.nav-item {
+				width: auto;
+			}
+			.nav-link {
+				&:after {
+					border-right: 1px solid #000;
+					content: '';
+					display: inline-block;
+					margin-left: 30px;
+					height: 12px;
+				}
+				&:hover {
+					color: #000;
+					transition-duration: .3s;
+				}
+			}
+		}
+	}
+	.sub-header {
+		display: table;
+		&.container {
+			margin: 0;
+			max-width: none;
+			width: 100%;
+		}
+		.nav {
+			display: table-cell;
+			width: auto;
+		}
+		.logo {
+			display: table-cell;
+			left: 0;
+			top: 20px;
+		}
+		.social.nav {
+			display: table-cell;
+			text-align: right;
+			margin: 0;
+			padding-right: 30px;
+			width: auto;
+		}
+		.selectric-wrapper {
+			display: table-cell;
+			margin: 0;
+		}
+		.triangle {
+			top: 189px;
+		}
+	}
 	.l-products {
+		.products-wrapper {
+			padding-right: 0;
+		}
 		.products-item {
+			margin: 0 0 15px;
 			margin-right: 1%;
-			width: 31%;
+			width: 23%;
 			&:nth-child(2n) {
 				float: none;
 			}
@@ -328,6 +398,43 @@
 			margin: 0 30px;
 		}
 	}
+	.l-footer {
+		.content {
+			margin: 0;
+			max-width: none;
+			display: table;
+		}
+		.content-item {
+			display: table-cell;
+			width: 25%;
+		}
+		.content-item__title {
+			font-size: rem(14);
+		}
+		form label {
+			max-width: 300px;
+		}
+	}
+	.underfooter {
+		margin: 50px 0 0;
+		display: table;
+		&.container {
+			max-width: none;
+			padding-left: 100px;
+		}
+		.wrapper, .on-top {
+			display: table-cell;
+		}
+		.wrapper {
+			text-align: left;
+		}
+		.payment {
+			margin-top: 20px;
+		}
+	}
+	.overlay {
+		height: 2240px;
+	}
 }
 @media screen and (min-width: 1024px) {
 	.l-products {
@@ -335,22 +442,7 @@
 			width: 500px;
 		}
 	}
+	.overlay {
+		height: 2315px;
+	}
 }
-
-/*
-.nav-link {
-				&:after {
-					border-right: 1px solid #000;
-					content: '';
-					display: inline-block;
-					margin-left: 30px;
-					height: 12px;
-				}
-				&:hover {
-					color: #000;
-					border-bottom: 1px solid #000;
-					transition-duration: .3s;
-					text-shadow: none;
-				}
-			}
-			*/
