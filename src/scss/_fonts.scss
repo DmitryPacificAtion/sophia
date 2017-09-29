@@ -1,7 +1,11 @@
 /* KrinkesDecorPERSONAL */
 @font-face {
 	font-family: 'KrinkesDecorPERSONAL';
-	src: url('../fonts/KrinkesDecorPERSONAL.ttf');
+	src: url('../fonts/KrinkesDecorPERSONAL.otf');
+	src: url('../fonts/KrinkesDecorPERSONAL.eot') format('embedded-opentype'),
+	url('../fonts/KrinkesDecorPERSONAL.woff') format('woff'),
+	url('../fonts/KrinkesDecorPERSONAL.ttf') format('truetype'),
+	url('../fonts/KrinkesDecorPERSONAL.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -9,7 +13,9 @@
 /* PlayfairDisplay-Italic */
 @font-face {
 	font-family: 'PlayfairDisplay';
-	src: url('../fonts/PlayfairDisplay-Italic.otf');
+	src: url('../fonts/KrinkesDecorPERSONAL.otf');
+	src: url('../fonts/PlayfairDisplay-Italic.ttf') format('truetype'),
+	url('../fonts/PlayfairDisplay-Italic.svg') format('svg');
 	font-weight: normal;
 	font-style: italic;
 }
