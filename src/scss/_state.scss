@@ -35,7 +35,6 @@
 }
 .l-footer {
 	.content-item__link:hover {
-		border-bottom: 1px solid #fff;
 		color: #fff;
 	}
 }
@@ -44,6 +43,9 @@
 	.modal {
 		display: block;
 	}
+}
+.custom-checkbox:hover {
+	cursor: pointer;
 }
 @media screen and (min-width: 480px) {
 	.sup-header {
@@ -286,7 +288,7 @@
 			padding: 10px 15px;
 			width: 31%;
 			.label-chevron-right:before {
-				top: 15px;
+				top: 14px;
 				right: -24px;
 				transform: rotateZ(-40deg);
 			}
@@ -296,7 +298,7 @@
 				transform: rotateZ(-140deg);
 			}
 			.label-chevron-left:before {
-				top: 15px;
+				top: 14px;
 				left: -24px;
 				transform: rotateZ(40deg);
 			}
