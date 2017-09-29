@@ -8,28 +8,28 @@
 </head>
 <body>
 	<header class="l-header">
-		<div class="sup-header">
-			<div class="call col-xs-12 col-sm-6">Call +001 555 801</div>
-			<ul class="nav col-xs-12 col-sm-6">
-				<li class="nav-item col-xs-12"><a href="#link" class="nav-link">WELCOME MSG!</a></li>
-				<li class="nav-item col-xs-12"><a href="#link" class="nav-link">MY ACCOUNT</a></li>
-				<li class="nav-item col-xs-12"><a href="#link" class="nav-link">MY WHISTLIST</a></li>
-				<li class="nav-item col-xs-12"><a href="#link" class="nav-link">LOGIN</a></li>
+		<div class="sup-header row">
+			<div class="call"><i class="fa fa-2 fa-phone" aria-hidden="true"></i> Call +001 555 801</div>
+			<ul class="nav">
+				<li class="nav-item"><a href="#link" class="nav-link">WELCOME MSG!</a></li>
+				<li class="nav-item"><a href="#link" class="nav-link">MY ACCOUNT</a></li>
+				<li class="nav-item"><a href="#link" class="nav-link">MY WHISTLIST</a></li>
+				<li class="nav-item"><a href="#link" class="nav-link" id="login">LOGIN</a></li>
 			</ul>
 		</div>
 		<div class="sub-header container">
-			<ul class="nav col-xs-12">
-				<li class="nav-item col-xs-6"><a href="#link" class="nav-link">Home</a></li>
-				<li class="nav-item col-xs-6"><a href="#link" class="nav-link">Gallery</a></li>
-				<li class="nav-item col-xs-6"><a href="#link" class="nav-link">Categories</a></li>
-				<li class="nav-item col-xs-6"><a href="#link" class="nav-link">Pages</a></li>
+			<ul class="nav">
+				<li class="nav-item"><a href="#link" class="nav-link">Home</a></li>
+				<li class="nav-item"><a href="#link" class="nav-link">Gallery</a></li>
+				<li class="nav-item"><a href="#link" class="nav-link">Categories</a></li>
+				<li class="nav-item"><a href="#link" class="nav-link">Pages</a></li>
 			</ul>
-			<div class="logo col-xs-12">Sophia</div>
-			<ul class="social nav col-xs-12">
-				<li class="nav-item col-xs-3"><a href="" class="nav-link fb">fb</a></li>
-				<li class="nav-item col-xs-3"><a href="" class="nav-link tw">tw</a></li>
-				<li class="nav-item col-xs-3"><a href="" class="nav-link pint">pn</a></li>
-				<li class="nav-item col-xs-3"><a href="" class="nav-link insta">ins</a></li>
+			<div class="logo">Sophia</div>
+			<ul class="social nav">
+				<li class="nav-item"><a href="" class="nav-link fb"><i class="fa fa-3 fa-facebook" aria-hidden="true"></i></a></li>
+				<li class="nav-item"><a href="" class="nav-link tw"><i class="fa fa-3 fa-twitter" aria-hidden="true"></i></a></li>
+				<li class="nav-item"><a href="" class="nav-link pint"><i class="fa fa-3 fa-pinterest" aria-hidden="true"></i></a></li>
+				<li class="nav-item"><a href="" class="nav-link insta"><i class="fa fa-3 fa-instagram" aria-hidden="true"></i></a></li>
 			</ul>
 			<select id="multilang" name="multilang">
 				<option value="English">English</option>
@@ -54,8 +54,8 @@
 			</ul>
 		</div>
 		<div class="slider__control">
-			<button class="slider__control_left"><</button>
-			<button class="slider__control_right">></button>
+			<button class="slider__control_left"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+			<button class="slider__control_right"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
 		</div>
 		<div class="sale">
 			<div class="sale__wrapper">
@@ -71,13 +71,29 @@
 			<button class="sale__btn">Shop now</button>
 		</div>
 	</section>
-	<section class="labels">
-		<div class="shipping">FREE SHIPPING<br><span>In Order Min $200</span></div>
-		<div class="return">30-DAYS RETURNS<br><span>Money Back  Guarantee</span></div>
-		<div class="support">24/7 SUPPORT<br><span>Lifestyme Support</span></div>
+	<section class="l-labels">
+		<div class="label-item shipping">
+			<i class="fa fa-plane" aria-hidden="true"></i>
+			FREE SHIPPING
+			<div class="label-small-text">In Order Min $200</div>
+			<div class="label-chevron-right"></div>
+		</div>
+		<div class="label-item return">
+			<div class="label-chevron-left"></div>
+			<i class="fa fa-clock-o" aria-hidden="true"></i>
+			30-DAYS RETURNS
+			<div class="label-small-text">Money Back  Guarantee</div>
+			<div class="label-chevron-right"></div>
+		</div>
+		<div class="label-item support">
+			<i class="fa fa-life-ring" aria-hidden="true"></i>
+			24/7 SUPPORT
+			<div class="label-small-text">Lifestyme Support</div>
+			<div class="label-chevron-left"></div>
+		</div>
 	</section>
 	<section class="l-products">
-		<h2>Summer Collection</h2>
+		<div class="h2-line"><h2>Summer Collection</h2></div>
 		<div class="products-wrapper">
 			<div class="products-item">
 				<div class="products-item__preview">
@@ -86,6 +102,7 @@
 						<div class="products-item__overlay_links">
 							<a href="#link" class="circle_link">20%</a>
 						</div>
+						<div class="heart-wrap"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
 					</div>
 					<div class="products-item__add-to-card"><div class="add-to-card__label">+ Add to card</div></div>
 				</div>
@@ -93,14 +110,18 @@
 			<div class="products-item">
 				<div class="products-item__preview">
 					<img src="img/product-2.jpg" alt="">
-					<div class="products-item__overlay"></div>
+					<div class="products-item__overlay">
+						<div class="heart-wrap"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+					</div>
 					<div class="products-item__add-to-card"><div class="add-to-card__label">+ Add to card</div></div>
 				</div>
 			</div>
 			<div class="products-item">
 				<div class="products-item__preview">
 					<img src="img/product-3.jpg" alt="">
-					<div class="products-item__overlay"></div>
+					<div class="products-item__overlay">
+						<div class="heart-wrap"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+					</div>
 					<div class="products-item__add-to-card"><div class="add-to-card__label">+ Add to card</div></div>
 				</div>
 			</div>
@@ -111,6 +132,7 @@
 						<div class="products-item__overlay_links">
 							<a href="#link" class="circle_link">40%</a>
 						</div>
+						<div class="heart-wrap"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
 					</div>
 					<div class="products-item__add-to-card"><div class="add-to-card__label">+ Add to card</div></div>
 				</div>
@@ -122,6 +144,7 @@
 						<div class="products-item__overlay_links">
 							<a href="#link" class="circle_link">20%</a>
 						</div>
+						<div class="heart-wrap"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
 					</div>
 					<div class="products-item__add-to-card"><div class="add-to-card__label">+ Add to card</div></div>
 				</div>
@@ -129,14 +152,18 @@
 			<div class="products-item">
 				<div class="products-item__preview">
 					<img src="img/product-6.jpg" alt="">
-					<div class="products-item__overlay"></div>
+					<div class="products-item__overlay">
+						<div class="heart-wrap"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+					</div>
 					<div class="products-item__add-to-card"><div class="add-to-card__label">+ Add to card</div></div>
 				</div>
 			</div>
 			<div class="products-item">
 				<div class="products-item__preview">
 					<img src="img/product-7.jpg" alt="">
-					<div class="products-item__overlay"></div>
+					<div class="products-item__overlay">
+						<div class="heart-wrap"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+					</div>
 					<div class="products-item__add-to-card"><div class="add-to-card__label">+ Add to card</div></div>
 				</div>
 			</div>
@@ -147,10 +174,12 @@
 						<div class="products-item__overlay_links">
 							<a href="#link" class="circle_link">40%</a>
 						</div>
+						<div class="heart-wrap"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
 					</div>
 					<div class="products-item__add-to-card"><div class="add-to-card__label">+ Add to card</div></div>
 				</div>
 			</div>
+			<div class="clearfix"></div>
 		</div>
 	</section>
 	<footer class="l-footer">
@@ -190,11 +219,11 @@
 			</div>
 			<div class="content-item">
 				<div class="content-item__title">STAY CONNECTED</div>
-				<a href="#link" class="social__link">Fb</a>
-				<a href="#link" class="social__link">Tw</a>
-				<a href="#link" class="social__link">Ins</a>
-				<a href="#link" class="social__link">Pin</a>
-				<a href="#link" class="social__link">RSS</a>
+				<a href="#link" class="social__link"><i class="fa fa-3 fa-facebook" aria-hidden="true"></i></a>
+				<a href="#link" class="social__link"><i class="fa fa-3 fa-twitter" aria-hidden="true"></i></a>
+				<a href="#link" class="social__link"><i class="fa fa-3 fa-instagram" aria-hidden="true"></i></a>
+				<a href="#link" class="social__link"><i class="fa fa-3 fa-pinterest" aria-hidden="true"></i></a>
+				<a href="#link" class="social__link"><i class="fa fa-3 fa-rss" aria-hidden="true"></i></a>
 				<div class="content-item__title subscribe">SUBSCRIBE <span>in</span> OUR NEWS LETTER</div>
 				<form action="/" method="POST">
 					<label for="email">
@@ -213,16 +242,16 @@
 					<li class="payment-item"><a href="#link" class="payment-link"><img src="img/discover.png" alt="Discover"></a></li>
 				</ul>
 			</div>
-			<button class="on-top">Up</button>
+			<button class="on-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
 		</div>
 	</footer>
-	<div class="overflow active">
+	<div class="overlay">
 		<div class="modal">
 			<h2>Sign In</h2>
-			<form action="/" method="POST">
+			<form action="R/" method="POST">
 				<input type="text" placeholder="username">
 				<input type="password" placeholder="password">
-				<label class="custom-checkbox-wrapper"><input type="checkbox" class="checkbox" id="origin-checkbox" checked=""><div class="custom-checkbox"></div><span class="checkbox-text">Keep me signed in</span></label>
+				<label class="custom-checkbox-wrapper"><input type="checkbox" class="checkbox" id="origin-checkbox" checked=""><div class="custom-checkbox checked"></div><span class="checkbox-text">Keep me signed in</span></label>
 				<button type="submit" class="btn-signin">Sign In</button>
 			</form>
 		</div>

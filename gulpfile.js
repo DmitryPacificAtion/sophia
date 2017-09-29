@@ -54,8 +54,8 @@ gulp.task('js', function () {
 
 gulp.task('fonts', function(){
 	return gulp.src([
-		'./node_modules/font-awesome/fonts/fonts', 
-		'./src/fonts'
+		'./node_modules/font-awesome/fonts/*', 
+		'./src/fonts/*'
 		])
 	.pipe(gulp.dest('./dist/fonts'));
 	});

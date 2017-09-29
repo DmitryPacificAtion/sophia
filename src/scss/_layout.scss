@@ -10,16 +10,25 @@
 	position: relative;
 	z-index: 100;
 }
+.l-labels {
+	padding: 65px 75px;
+	text-align: center;
+}
+
+.l-products {
+	overflow: hidden;
+}
 .l-footer {
 	background-color: $black;
 	color: #fff;
 }
-.overflow {
+.overlay {
 	background-color: rgba(0, 0, 0, .5);
 	display: none;
 	position: absolute;
 	top: 0;
 	left: 0;
+	transition-duration: .3s;
 	height: 6310px;
 	width: 100%;
 	z-index: 9990;
