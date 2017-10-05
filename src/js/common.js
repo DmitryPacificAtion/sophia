@@ -1,9 +1,6 @@
 $(document).ready(function() {
 
-// const arr = [1,2,3,4,5];
-// arr.map( (item) => { console.log(item) } );
-
-var dots = $('.slider__dots_item'),
+	var dots = $('.slider__dots_item'),
 	slides = $('.slider__content_item'),
 	lButton = $('.slider__control_left'),
 	rButton = $('.slider__control_right'),
@@ -45,9 +42,8 @@ var dots = $('.slider__dots_item'),
 			targetDataIndex = 0;
 		}
 
-		$('[data-slider-content=' + currentDataIndex + ']').fadeOut(600).removeClass('active');
-		$('[data-slider-content=' + ++targetDataIndex + ']').fadeIn(600).addClass('active');
-
+		$('[data-slider-content=' + currentDataIndex + ']').css({'transform': 'translateX(100%)'}).fadeOut(200).removeClass('active');
+		$('[data-slider-content=' + ++targetDataIndex + ']').css({'transform': 'translateX(0)'}).fadeIn(600).addClass('active');
 		changeActiveDot(currentDataIndex, targetDataIndex);
 	});
 
@@ -60,8 +56,8 @@ var dots = $('.slider__dots_item'),
 			targetDataIndex = slides.length + 1;
 		}
 
-		$('[data-slider-content=' + currentDataIndex + ']').fadeOut(600).removeClass('active');
-		$('[data-slider-content=' + --targetDataIndex + ']').fadeIn(600).addClass('active');
+		$('[data-slider-content=' + currentDataIndex + ']').css({'transform': 'translateX(-100%)'}).fadeOut(200).removeClass('active');
+		$('[data-slider-content=' + --targetDataIndex + ']').css({'transform': 'translateX(0%)'}).fadeIn(200).addClass('active');
 
 		changeActiveDot(currentDataIndex, targetDataIndex);
 	});
@@ -92,44 +88,36 @@ var dots = $('.slider__dots_item'),
 		}
 	});
 
-	var overlay = $('.overlay');
-	var modal = $('.modal');
+	function Popup() {
+		var overlay = $('.overlay'),
+		modal = $('.modal'),
+		login = $('#login');
 
-	$('#login').on('click', function() {
-		overlay.fadeIn();
-		modal.fadeIn(300);
-		overlay.parent().addClass('action');
-	});
+		var addListener = function() {
+			login.on('click', function() {
+				overlay.fadeIn();
+				modal.fadeIn(300);
+			});
 
-	overlay.on('click', function() {
-		if (event.target == event.currentTarget) {
-			modal.fadeOut();
-			overlay.fadeOut(300);
-			overlay.parent().removeClass('action');
+			overlay.on('click', function(event) {
+				console.log('event.currentTarget', event.currentTarget)
+				console.log('event.target', event.target)
+				if (event.target === event.currentTarget) {
+					modal.fadeOut();
+					overlay.fadeOut(300);
+				}
+			});			
 		}
-	});
+		this.main = function() {
+			addListener();
+		}		
+	}
+	new Popup().main();
 
-
-	$('.l--price button.cta').on('click', function(){
-		overlay.fadeIn();
-		modal.fadeIn(300);
-	});
-	
-	overlay.on('click', function(){
-		if (event.target == event.currentTarget) {
-			modal.fadeOut();
-			overlay.fadeOut(300);
-		}
-	});
-
+	/* Scroll */
 	$('.on-top').on('click', function(e){
 		e.preventDefault;
-		scrollTo(e, 'l-header');
+		$('html, body').animate({ scrollTop: $('.l-header').offset().top }, 500);
 	});
-
-	function scrollTo(e, attr){
-		e.target.prevetnDefault;
-		$('html, body').animate({ scrollTop: $('.'+attr).offset().top }, 500);
-	}
 
 });

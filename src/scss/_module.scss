@@ -3,6 +3,7 @@
 	text-align: center;
 	.call {
 		padding: 11px 30px;
+		font-weight: 700;
 		width: 100%;
 	}
 	.nav {
@@ -10,6 +11,7 @@
 		width: 100%;
 		.nav-link {
 			color: $dark-typo;
+			font-weight: 700;
 			padding: 10px 0;
 		}
 	}
@@ -472,7 +474,7 @@
 			outline: none;
 		}
 		.checkbox-text {
-			margin-left: 15px;
+			margin-left: 20px;
 			color: #ccc;
 			position: relative;
 			top: -3px;
@@ -490,6 +492,9 @@
 }
 .custom-checkbox-wrapper {
 	position: relative;
+	.checkbox {
+		display: none;
+	}
 	.custom-checkbox {
 		background-color: #ccc;
 		border-radius: 3px;
@@ -507,7 +512,7 @@
 		text-align: center;
 		position: absolute;
 		top: 6px;
-		left: 3px;
+		left: 2.5px;
 		transform: rotateZ(45deg);
 		height: 2px;
 		width: 10px;
