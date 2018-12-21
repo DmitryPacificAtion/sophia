@@ -188,10 +188,10 @@
 		}
 		h2 {
 			&:before {
-				left: 30px;
+				left: 20px;
 			}
 			&:after {
-				right: 30px;
+				right: 20px;
 			}
 		}
 	}
@@ -236,6 +236,9 @@
 			}
 			.nav-link {
 				margin-right: 5px;
+				.fa:before {
+					vertical-align: middle;
+				}
 			}
 		}
 		.triangle {
@@ -256,24 +259,24 @@
 		.label-item {
 			display: inline-block;
 			.label-chevron-right:before, .label-chevron-right:after, .label-chevron-left:before, .label-chevron-left:after {
-				border-top: 90px solid #fff;
+				border-top: 100px solid #fff;
 				content: '';
 				display: block;
 				position: absolute;
-				width: 25px;
+				width: 30px;
 			}
 			.label-chevron-right:before {
-				top: 25px;
+				top: 30px;
 				right: 5px;
-				transform: rotateZ(40deg);
+				transform: rotateZ(45deg);
 			}
 			.label-chevron-right:after {
 				top: -50px;
 				right: 5px;
-				transform: rotateZ(-40deg);
+				transform: rotateZ(-45deg);
 			}
 			.label-chevron-left:before {
-				top: 25px;
+				top: 30px;
 				left: 5px;
 				transform: rotateZ(140deg);
 			}
@@ -288,24 +291,24 @@
 			padding: 10px 15px;
 			width: 31%;
 			.label-chevron-right:before {
-				top: 14px;
-				right: -24px;
-				transform: rotateZ(-40deg);
+				top: 15px;
+				right: -20px;
+				transform: rotateZ(-45deg);
 			}
 			.label-chevron-right:after {
-				top: -40px;
-				right: -25px;
-				transform: rotateZ(-140deg);
+				top: -35px;
+				right: -20px;
+				transform: rotateZ(-135deg);
 			}
 			.label-chevron-left:before {
-				top: 14px;
-				left: -24px;
-				transform: rotateZ(40deg);
+				top: 15px;
+				left: -20px;
+				transform: rotateZ(45deg);
 			}
 			.label-chevron-left:after {
-				top: -40px;
-				left: -25px;
-				transform: rotateZ(-40deg);
+				top: -35px;
+				left: -20px;
+				transform: rotateZ(-45deg);
 			}
 		}
 		.shipping{
@@ -446,5 +449,17 @@
 	}
 	.overlay {
 		height: 2315px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.l-labels {
+		.label-item {
+			.label-chevron-right, .label-chevron-left {
+				&:before, &:after {
+					content: none;
+				}
+			}
+		}
 	}
 }
